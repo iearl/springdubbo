@@ -6,7 +6,7 @@ import pub.ants.dubbo.ServiceAPI;
 public class QuickStartServiceImpl implements ServiceAPI {
 
     @Override
-    public void sendMsg(String msg) {
-        System.out.println(msg+"_impl");
+    public String sendMsg(String msg) {
+        return "dubbo provider:"+msg;
     }
 }
